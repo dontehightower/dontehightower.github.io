@@ -1,0 +1,56 @@
+.tech-stack {
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+  }
+
+  &__item {
+    display: inline-block;
+    margin: 0.5rem;
+    font-size: 2rem;
+    color: #fff;
+  }
+}
+
+.devicons {
+  font-size: 4rem;
+  &-nodejs {
+    color: #73aa62;
+  }
+  &-django {
+    color: #44b78b;
+  }
+  &-stylus {
+    color: #accd00;
+  }
+}
+
+.fa-sass {
+  color: #cf649a;
+}
+
+.fa-js {
+  color: #f3df49;
+}
+
+.fa-html5 {
+  color: #f16529;
+}
+
+.fa-css3-alt {
+  color: #1ba8e0;
+}
+
+.fa-react {
+  color: #6eddfb;
+}
+
+.firebase-logo {
+  height: 2.4rem;
+}
+
+.redux-logo {
+  height: 1.6rem;
+}

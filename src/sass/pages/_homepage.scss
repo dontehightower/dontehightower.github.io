@@ -1,0 +1,22 @@
+.homepage {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  @include respond(phone) {
+    flex-direction: column;
+  }
+  &__about {
+    width: 40%;
+    @include respond(phone) {
+      width: 80%;
+    }
+  }
+  &__contact {
+    width: 40%;
+    height: 24rem;
+    @include respond(phone) {
+      width: 80%;
+    }
+  }
+}

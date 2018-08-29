@@ -1,0 +1,15 @@
+.homepage__about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  // flex item properties
+  &--paragraph {
+    font-family: 'Monteserrat', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.5;
+  }
+}
