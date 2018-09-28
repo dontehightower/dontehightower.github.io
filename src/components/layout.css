@@ -1,6 +1,17 @@
 html {
   font-size: 62.5%;
 }
+@media (min-width: 112.5em) {
+  html { font-size: 75%; }
+}
+@media (max-width: 56.25em) {
+  html { font-size: 50%; }
+}
+@media (max-width: 37.5em) {
+  html { font-size: 34.25%; }
+}
+
+
 
 body {
   box-sizing: inherit;

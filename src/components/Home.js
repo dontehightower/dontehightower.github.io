@@ -13,9 +13,19 @@ const Home = () => {
     align-items: center;
     flex-wrap: wrap;
     max-width: 100rem;
+    @media screen and (max-width: 37.5em) {
+      max-width: 100%;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
   `;
   const article= css`
     width: 40%;
+    @media screen and (max-width: 37.5em) {
+      width: 80%;
+      margin-bottom: 4rem;
+    }
   `;
   const paragraphStyles = css`
     font-family: 'Monteserrat', sans-serif;
@@ -23,8 +33,9 @@ const Home = () => {
     font-weight: 400;
     line-height: 1.5;
     margin-top: 2rem;
-    @media screen and (max-width: 48rem) {
-      width: 80%;
+    @media screen and (max-width: 37.5em) {
+      width: 100%;
+      font-size: 2.4rem;
     }
   `;
   const contactMethodList = css`
@@ -33,7 +44,7 @@ const Home = () => {
     justify-content: space-between;
     list-style: none;
     height: 16rem;
-    @media screen and (max-width: 48rem) {
+    @media screen and (max-width: 37.5em) {
       width: 80%;
     }
   `;
@@ -41,17 +52,26 @@ const Home = () => {
     margin: 0;
     display: grid;
     grid-template-columns: 12rem auto;
+    @media screen and (max-width: 37.5em) {
+      grid-gap: 10rem;
+    }
   `;
   const contactMethodName = css`
     font-family: 'Monteserrat', sans-serif;
     font-size: 2rem;
     font-weight: 600;
     margin-right: 2rem;
+    @media screen and (max-width: 37.5em) {
+      font-size: 2.6rem;
+    }
   `;
   const contactMethodLink = css`
     text-decoration: none;
     color: #757575;
     font-size: 1.6rem;
+    @media screen and (max-width: 37.5em) {
+      font-size: 2.2rem;
+    }
   `;
 
   const displayContactInfo = () => {
